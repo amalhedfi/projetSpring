@@ -29,7 +29,6 @@ public class CommandeController<OrderForm> {
         client.setEmail(commandeForm.getClient().getEmail());
         client.setAddress(commandeForm.getClient().getAddress());
         client.setPhoneNumber(commandeForm.getClient().getPhoneNumber());
-        client.setUsername(commandeForm.getClient().getUsername());
         client=clientRepository.save(client);
         System.out.println(client.getId());
 

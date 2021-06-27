@@ -19,7 +19,6 @@ public class Product implements Serializable {
     private boolean selected;
     private boolean available;
     private String photoName;
-    @Transient
     private int quantity=1;
     @ManyToOne( fetch = FetchType.LAZY)
     private Categorie categorie;

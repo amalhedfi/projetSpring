@@ -22,7 +22,6 @@ public class Paiement {
     private String cardType;
     @OneToOne(mappedBy = "paiement", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Commande commande;
 
 }

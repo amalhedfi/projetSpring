@@ -10,6 +10,7 @@ import java.util.List;
 @CrossOrigin("*")
 @RestController
 public class ProduitController {
+
     @Autowired
     private ProductRepository productRepository;
 
